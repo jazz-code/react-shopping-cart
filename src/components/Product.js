@@ -6,13 +6,13 @@ const Product = props => {
 
   return (
     <div className="product">
-      <img src={state.product.image} alt={`${state.product.title} book`} />
+      <img src={products.image} alt={`${products.title} book`} />
 
-      <h1 className="title">{state.product.title}</h1>
+      <h1 className="title">{products.title}</h1>
 
-      <p className="price">${state.product.price}</p>
+      <p className="price">${products.price}</p>
 
-      <button onClick={() => state.addItem(state.product)}>Add to cart</button>
+      <button onClick={() => addItem(products)}>Add to cart</button>
     </div>
   );
 };
